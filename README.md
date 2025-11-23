@@ -1,20 +1,118 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# CRISP – CBC Career Navigator
+### *AI-powered pathway & career guidance for CBC learners (Grades 1–12).*
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## 🚀 Overview
+**CRISP** is an AI-driven platform designed for the **Kenyan Competency-Based Curriculum (CBC)**.  
+It helps learners:
 
-View your app in AI Studio: https://ai.studio/apps/drive/1fn1j6gZq54uPTniE4r5Xrj2g7KoFsDly
+- Discover interests (Grades 1–6)
+- Select the right CBC pathway (Grades 7–9)
+- Plan STEM-related careers (Grades 10–12)
 
-## Run Locally
+The system uses **Google Genkit**, **Agent Development Kit (ADK)**, and **Vertex AI (Gemini)** to generate personalized learning and career guidance.
 
-**Prerequisites:**  Node.js
+---
+
+## 🎯 Features
+
+### **CRISP Kids (Grades 1–6)**
+- Visual interest assessment  
+- CBC-aligned STEM activities  
+- Early strengths discovery  
+
+### **JSS Pathways (Grades 7–9)**
+- CBC pathway recommendations  
+- Strength profiling  
+- Mini project suggestions  
+
+### **Career Planner (Grades 10–12)**
+- STEM career matching  
+- Required subjects  
+- Step-by-step learning roadmap  
+
+### **CRISP AI Assistant**
+Powered by **Google ADK**, offering:
+- CBC Q&A  
+- Career guidance  
+- General learning support  
+
+---
+
+## 🧠 Tech Stack
+- **Google Vertex AI** – model inference  
+- **Google AI Studio** – prompting  
+- **Agent Development Kit (ADK)** – AI assistant  
+- **Genkit** – workflow orchestration  
+- **Firebase** – hosting, auth, Firestore  
+- **React / Next.js** – frontend  
+
+---
+
+## 🏗️ Architecture
+**Frontend (React/Next.js)**
+
+  ↓
+  
+Firebase Hosting & Functions
+
+↓
+
+Genkit Flow → Vertex AI (Gemini)
+
+↓
+
+Structured Output (pathway, plan, activity)
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 📦 Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/crisp-cbc-navigator.git
+cd crisp-cbc-navigator
+```
+### 2. Install dependencies
+```
+npm install
+```
+
+### 3. Add environment variables
+
+```
+Create a .env.local file:
+
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+
+GOOGLE_AI_API_KEY=
+```
+
+### 4. Run the project
+```
+npm run dev
+```
+## 🎥 Demo Video
+[Watch the Demo Video](https://drive.google.com/file/d/1Zg9dnk9NRcOWgNMy1-yu20xp-JcdyUgn/view?usp=sharing)
+
+---
+
+## 📄 License
+MIT License.
+
+---
+
+## 👤 Author
+**Crispin Oigara**  
+Build With AI – Unstacked Labs
+
+
+
+
